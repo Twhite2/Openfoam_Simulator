@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  openfoam_simulator:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: openfoam_simulator:latest
+    container_name: openfoam_simulator
+    volumes:
+      # Mount project data for persistence
+      - ../data:/app/Openfoam_Simulator/data
+      - ../runs:/app/Openfoam_Simulator/runs
+      # Optional: Mount source for development
+      - ../src:/app/Openfoam_Simulator/src
+    ports:
+      # VNC port
+      - "5900:5900"
+      # noVNC web client port
+      - "6080:6080"
+    environment:
+      # Set display resolution (optional)
+      - RESOLUTION=1920x1080
+    restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge

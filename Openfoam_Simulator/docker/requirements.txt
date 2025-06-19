@@ -1,0 +1,56 @@
+# Core dependencies
+numpy>=1.20.0
+scipy>=1.6.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+PyYAML>=6.0
+
+# PyQt dependencies
+PyQt5>=5.15.4
+PyQt5-sip>=12.9.0
+PyQtWebEngine>=5.15.4
+
+# VTK and ParaView dependencies 
+# Note: Main VTK/ParaView installation comes from the base image
+vtk>=9.0.0
+PVGeo>=2.1.0
+pyqtgraph>=0.12.3
+
+# OpenFOAM Python interfaces
+PyFoam>=2021.6
+# PyDualSPHysics is not available on PyPI, commented out
+# PyDualSPHysics>=1.0.0
+
+# Mesh handling
+meshio>=5.0.0
+pyvista>=0.32.0
+# netgen might not be available via pip, commented out
+# netgen>=6.2.2102
+
+# Data processing
+h5py>=3.3.0
+dask>=2021.6.0
+xarray>=0.19.0
+
+# Plotting and visualization
+plotly>=5.1.0
+seaborn>=0.11.1
+
+# Industry-specific
+# petrolpy might not be available via pip, commented out
+# petrolpy>=0.1.5
+pint>=0.17    # Unit conversion
+# thermopy might not be available via pip, commented out
+# thermopy>=0.5.0
+# ladybug might not be available via pip, commented out
+# ladybug>=1.10.0
+
+# Utilities
+tqdm>=4.61.1
+colorlog>=6.4.1
+joblib>=1.0.1
+rich>=10.6.0
+
+# Testing
+pytest>=6.2.5
+pytest-qt>=4.0.2

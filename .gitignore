@@ -1,0 +1,49 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Large files
+*.so
+*.dll
+*.dylib
+*.o
+
+# OpenFOAM simulation results
+runs/*/processor*/
+runs/*/[0-9]*/
+runs/*/[0-9]*.[0-9]*/
+*.foam
+*.OpenFOAM
+
+# Log files
+logs/
+*.log
+
+# Other
+.env
+.cursor
