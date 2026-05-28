@@ -1,4 +1,4 @@
-# Openfoam_Simulator
+# Openfoam_Simulator(PARAVIEW INSPIRED)
 
 A comprehensive CFD visualization and simulation system for OpenFOAM, designed for oil & gas industry applications.
 
